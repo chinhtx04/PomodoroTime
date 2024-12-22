@@ -1,0 +1,57 @@
+{
+  "name": "pomodoro-timer",
+  "displayName": "Pomodoro Timer",
+  "description": "A simple Pomodoro Timer for VSCode",
+  "version": "0.0.1",
+  "publisher": "Nguyen Van Chinh",
+  "engines": {
+      "vscode": "^1.50.0"
+  },
+  "categories": [
+      "Other"
+  ],
+  "activationEvents": [
+      "onCommand:extension.startPomodoro",
+      "onCommand:extension.pausePomodoro",
+      "onCommand:extension.resetPomodoro",
+      "onCommand:extension.showPomodoroClock"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+      "commands": [
+          {
+              "command": "extension.startPomodoro",
+              "title": "Start Pomodoro Timer"
+          },
+          {
+              "command": "extension.pausePomodoro",
+              "title": "Pause Pomodoro Timer"
+          },
+          {
+              "command": "extension.resetPomodoro",
+              "title": "Reset Pomodoro Timer"
+          },
+          {
+              "command": "extension.showPomodoroClock",
+              "title": "Show Pomodoro Clock"
+          }
+      ],
+      "viewsContainers": {
+          "activitybar": [
+              {
+                  "id": "pomodoroTimer",
+                  "title": "Pomodoro Timer",
+                  "icon": "pomodoro.png"
+              }
+          ]
+      },
+      "views": {
+          "pomodoroTimer": [
+              {
+                  "id": "pomodoroTimerView",
+                  "name": "Pomodoro Timer"
+              }
+          ]
+      }
+  }
+}
