@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Pomodoro Timer Extension for VSCode
 
 ## Overview
@@ -50,3 +51,6 @@ For questions or feedback, please contact [your-email@example.com].///////
 ---
 
 Enjoy using the Pomodoro Timer and happy coding!
+=======
+# PomodoroTime
+>>>>>>> 7b83af1476db798a4ee925724dc544145a2a0be8
